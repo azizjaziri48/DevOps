@@ -5,12 +5,12 @@ import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.junit.jupiter.api.Assertions:
-import org junit.jupiter.api.Methodorderer.OrderAnnotation; 
-import org junit.jupiter.api.Order;
-import org junit. jupiter.api.Test;
+import org.junit.jupiter.api.Methodorderer.OrderAnnotation; 
+import org.junit.jupiter.api.Order;
+import org.junit. jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodorder;
 import org.springframework.beans.factory.annotation.Autowired;
-import org. springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import tn.esprit.spring.entities.Role;
 import tn.esprit.spring.entities.User;
 import java.text.ParseException;
