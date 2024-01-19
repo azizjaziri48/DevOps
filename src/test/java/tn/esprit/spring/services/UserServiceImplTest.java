@@ -25,7 +25,7 @@ class UserServiceImplTest {
   @Autowired 
   IUserService us ; 
   @Test 
-  @Order(1) 
+  @Order(0) 
   public void TestRetrieveAllUsers(){
     List<User> listUsers = us.retrieveAllUsers(); 
     Assertions.AssertEquals(0, listUsers.size());
