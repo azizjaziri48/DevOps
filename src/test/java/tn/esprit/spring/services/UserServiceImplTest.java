@@ -8,7 +8,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import tn.esprit.spring.entities.User;
-import tn.esprit.spring.entities.Role;  // Assurez-vous d'importer la classe Role
+import tn.esprit.spring.entities.Role;  
 
 import java.util.Date;
 import java.util.List;
@@ -29,11 +29,10 @@ class UserServiceImplTest {
 		Assertions.assertNotNull(user);
 		UserServiceImplTest.testCaseUser.setId(user.getId());
 	}
-	
-    @Test
-    @Order(2)
-    public void testRetrieveAllUsers() {
-       List<User> listUsers = us.retrieveAllUsers();
+	@Test
+        @Order(2)
+        public void testRetrieveAllUsers() {
+                List<User> listUsers = us.retrieveAllUsers();
 		Assertions.assertNotNull(listUsers);
-    }
+        }
 }
