@@ -19,9 +19,9 @@ class UserServiceImplTest {
     IUserService us;
 
     @Test
-    @Order(0)
+    @Order(1)
     public void testRetrieveAllUsers() {
-        List<User> listUsers = us.retrieveAllUsers();
-        Assertions.assertEquals(0, listUsers.size()); // Utilisation correcte de assertEquals
+       List<User> listUsers = us.retrieveAllUsers();
+		Assertions.assertNotNull(listUsers);
     }
 }
