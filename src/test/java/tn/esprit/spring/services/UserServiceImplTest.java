@@ -17,11 +17,21 @@ class UserServiceImplTest {
 
     @Autowired
     IUserService us;
-
-    /*@Test
-    @Order(1)
+	
+	private static User testCaseUser = new User("Aziz", "Jaziri", new Date(2000,05,01), Role.INGENIEUR);
+	
+	@Test
+	@Order(1)
+	void addUser() {
+		User user = us.addUser(UserServiceImplTest.testCaseUser);
+		Assertions.assertNotNull(user);
+		UserServiceImplTest.testCaseUser.setId(user.getId());
+	}
+	
+    @Test
+    @Order(2)
     public void testRetrieveAllUsers() {
        List<User> listUsers = us.retrieveAllUsers();
 		Assertions.assertNotNull(listUsers);
-    }*/
+    }
 }
