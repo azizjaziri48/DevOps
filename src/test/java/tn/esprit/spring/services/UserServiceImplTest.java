@@ -8,7 +8,9 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import tn.esprit.spring.entities.User;
+import tn.esprit.spring.entities.Role;  // Assurez-vous d'importer la classe Role
 
+import java.util.Date;
 import java.util.List;
 
 @SpringBootTest
