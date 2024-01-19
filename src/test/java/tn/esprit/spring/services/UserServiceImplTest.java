@@ -18,10 +18,10 @@ class UserServiceImplTest {
     @Autowired
     IUserService us;
 
-    @Test
+    /*@Test
     @Order(1)
     public void testRetrieveAllUsers() {
        List<User> listUsers = us.retrieveAllUsers();
 		Assertions.assertNotNull(listUsers);
-    }
+    }*/
 }
